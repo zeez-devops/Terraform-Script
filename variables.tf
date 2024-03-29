@@ -1,4 +1,8 @@
 # create some variables
+variable "region" {
+  description = "Default region"
+}
+
 variable "cluster_name" {
   type        = string
   description = "EKS cluster name."
