@@ -4,7 +4,7 @@ on:
 
 jobs:
   Plan:
-    uses: https://github.com/zeez-devops/Terraform-Script/.github/workflows/aws-terraform.yml@main
+    uses: zeez-devops/Terraform-Script/.github/workflows/aws-terraform.yml@main
     with:
       gh_environment: dev
     secrets:
