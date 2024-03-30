@@ -8,6 +8,7 @@ jobs:
     with:
       gh_environment: dev
     secrets:
-      cli_config_credentials_token: 
-      cli_config_credentials_tokens:
+      cli_config_credentials_token: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      cli_config_credentials_tokens: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
 
