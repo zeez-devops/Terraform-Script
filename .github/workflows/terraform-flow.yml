@@ -1,4 +1,4 @@
-name: "my-EKS"
+name: "01-EKS"
 on:
   workflow_dispatch:
 
