@@ -20,6 +20,15 @@ jobs:
         shell: bash
 
     steps:
+      - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v2.0.2
+      with:
+        #terraform_version: ${{ inputs.tf_version }}
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      
+
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
